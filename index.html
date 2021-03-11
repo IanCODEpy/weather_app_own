@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Weatherapp</title>
+</head>
+<body>
+    <header>
+        <div class = "header-wrapper">
+        <h1>Search the weather...</h1>
+        </div>
+    </header>
+
+    <form id="weather-form">
+        <input type="text" id="search-bar" placeholder="Enter a city" name="userInput">
+    </form>
+
+    <div class="weather-card d-none">
+        <div class="city-name">
+            <span>London</span>
+        </div>
+        <div class="icon">
+            <img src="sun.png" alt="daytime">
+        </div>
+        <div class="temperature">
+            <span>20</span>
+            <span>&deg;C</span>
+        </div>
+    </div>
+
+    <script src = "scripts/weather.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
